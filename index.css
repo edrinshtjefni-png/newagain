@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@400;600;700&display=swap');
+@import "leaflet/dist/leaflet.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-brand-primary: #059669;
+  --color-brand-dark: #047857;
+  --color-brand-text: #2D2D2D;
+  --color-brand-muted: #7A7570;
+  --color-brand-border: #E5E2DE;
+  --color-brand-bg: #F5F2EB;
+  --color-brand-secondary: #F4F1EE;
+  --color-brand-warm-accent: #EBE7E2;
+}
+
+/* Hide scrollbars for a clean carousel experience */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-instagram-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(253, 244, 151, 0.3) 0%,
+    rgba(252, 204, 99, 0.3) 25%,
+    rgba(253, 89, 73, 0.25) 50%,
+    rgba(214, 36, 159, 0.2) 75%,
+    rgba(40, 90, 235, 0.15) 100%
+  ), #F5F2EB;
+  background-attachment: fixed;
+}
+
+
