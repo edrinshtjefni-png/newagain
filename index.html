@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script>
+      // Automatically clear old local state and force clean refresh to bypass aggressive browser/device caching
+      const CURRENT_APP_VERSION = 'v2.0.0';
+      const storedVersion = localStorage.getItem('strakstime_app_version');
+      if (storedVersion !== CURRENT_APP_VERSION) {
+        localStorage.setItem('strakstime_app_version', CURRENT_APP_VERSION);
+        localStorage.removeItem('strakstime_users_db');
+        localStorage.removeItem('strakstime_user');
+        localStorage.removeItem('strakstime_bookings');
+        localStorage.removeItem('strakstime_salons');
+        localStorage.removeItem('strakstime_users_db_v2');
+        localStorage.removeItem('strakstime_user_v2');
+        localStorage.removeItem('strakstime_bookings_v2');
+        localStorage.removeItem('strakstime_salons_v2');
+        localStorage.removeItem('strakstime_users_db_v3');
+        localStorage.removeItem('strakstime_user_v3');
+        localStorage.removeItem('strakstime_bookings_v3');
+        localStorage.removeItem('strakstime_salons_v3');
+        window.location.replace(window.location.origin + window.location.pathname + '?v=' + Date.now());
+      }
+    </script>
+    <title>StraksTime.no | Book top-rated local beauty & wellness services</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

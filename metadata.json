@@ -1,0 +1,6 @@
+{
+  "name": "StraksTime.no",
+  "description": "A minimalist, high-fidelity beauty and wellness booking platform inspired by StraksTime.no, featuring a centered search, salon exploration, stylist selection, and booking management.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
